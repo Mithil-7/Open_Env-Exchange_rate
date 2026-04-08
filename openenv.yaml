@@ -1,0 +1,10 @@
+version: 1.0
+name: ExchangeRateRemediation
+description: Agent must clean and reconcile corrupted financial exchange rate feeds.
+tasks:
+  - id: easy
+    description: "Drop rows where Feed A is null."
+  - id: medium
+    description: "Use Feed B if Feed A shows an anomalous spike (>1.2)."
+  - id: hard
+    description: "Use Feed B if Feed A latency exceeds 40ms."
