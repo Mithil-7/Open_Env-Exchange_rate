@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-meta-sst"
+version = "0.1.0"
+description = "A multi-mode deployment project"
+authors = [{ name = "Your Name" }]
+requires-python = ">=3.10"
+dependencies = ["openai", "openenv-core>=0.2.0"]
+
+[project.scripts]
+server = "server.app:main"
